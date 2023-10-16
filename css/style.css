@@ -52,7 +52,7 @@ a {
 .header-presentation {
     display: flex;
     justify-content: left;
-    gap: 25px;
+    gap: 20px;
     align-items: center;
     flex-wrap: wrap;
 }
