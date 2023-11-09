@@ -7,7 +7,6 @@ let devMessages = [
     'Posso fazer isso o dia todo.',
     'Never gonna give you up',
     'Você ainda tá aqui?',
-    "What're ya sellin'?",
     'Você é teimoso.',
     '🐱',
     ':3'
