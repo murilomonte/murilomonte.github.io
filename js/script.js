@@ -13,8 +13,6 @@ let devMessages = [
     ':3'
 ];
 
-
-
 function devMsgCounter() {
     if (currentCount > 12 && !lastRun) {
         document.getElementById('spotify-iframe').src = 'https://open.spotify.com/embed/track/4cOdK2wGLETKBW3PvgPWqT?utm_source=generator';
