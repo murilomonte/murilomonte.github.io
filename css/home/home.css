@@ -36,7 +36,7 @@ body {
 }
 
 .header-presentation-image {
-    max-width: 150px;
+    max-width: 120px;
     border-radius: 15px;
     transition: .2s;     
 }
