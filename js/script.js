@@ -48,7 +48,9 @@ let musicList = [
     '35SbrfbaSpGUBX7e5BPega',
     '0rnGYYBw32ALUIiuEgwv2c',
     '6TRjT37UyRUVrGg3gTlIqb',
-    '6FR410XjipcpHIsmv1bYKA'
+    '6FR410XjipcpHIsmv1bYKA',
+    '6gudDpl4qpCrgx70yXYHii0',
+    '0R7l4W5thmI0D8gyVk4IcS',
 ]
 
 document.addEventListener('DOMContentLoaded', musicChooser);
