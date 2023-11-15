@@ -21,10 +21,20 @@
     font: 600 1.2rem/1.1 var(--font-1);
 }
 
+.font-1-m {
+    font-family: var(--font-1);
+    font-size: 1rem;
+}
+
 .font-2-m {
     font: 400 1.1rem/1.2 var(--font-2)
 }
 
 .font-2-p-B {
     font: 700 1rem/1.3 var(--font-2)
+}
+
+.font-2-pp {
+    font-family: var(--font-2);
+    font-size: .9rem;  
 }
