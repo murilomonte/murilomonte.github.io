@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
 
     padding: 0px;
     margin: 0px;
@@ -24,7 +25,7 @@ body {
 }
 
 .header {
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .header-presentation {
@@ -49,7 +50,7 @@ body {
 
 .header-social {
     display: flex;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 .header-social-item {
@@ -61,22 +62,20 @@ body {
     width: 50px;
     height: 50px;
     border-radius: 10px;
-    transition: .2s;  
+    transition: .2s;
+    border: 2px solid transparent;
 }
 
 .header-social-item:hover {
-    border-radius: 50%;
+    /* background-color: var(--b3); */
+    border-radius: 20px;
 
-    border: 3px solid var(--a1);
+    border: 2px solid var(--a1);
     transition: .2s;
 }
 
 .header-social-item > svg {
     width: 30px;
-}
-
-.main > iframe {
-    margin-top: 15px;
 }
 
 .main > h2 {
@@ -90,34 +89,73 @@ body {
 .main-link-container {
     display: flex;
     flex-direction: column;
-    gap: 15px;
 
+    gap: 15px;
     margin-top: 10px;
 }
 
-.main-link-container-item {
+.link-container-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 15px;
+    gap: 10px;
+
+    transition: .2s;
+    border: 2px solid transparent;
+}
+
+.link-container-item:hover {
+    /* background-color: var(--b3); */
+    border-radius: 20px;
+    border: 2px solid var(--a1);
+    transition: .2s;
+}
+
+.link-container-item-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 7px;
+}
+
+.link-container-item-text > p {
+    font-family: var(--font-2);
+    font-size: .9rem;
+}
+
+.link-container-item-text > h3 {
+    font-family: var(--font-1);
+    font-size: 1rem;
+}
+
+.main-iframe-container {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+}
+
+.main-iframe-container-iframe {
+    max-width: 300px;
+}
+
+.main-iframe-container-controller {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 5px;
-
-    padding: 20px;
-    height: 70px;
-    border-radius: 15px;
-    transition: .2s;
-
-    text-align: center;
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color .5s ease;
 }
 
-.main-link-container-item:hover {
-    border-radius: 50px;
-    border: 3px solid var(--a1);
-
-    transition: .2s;
-}
-
-.main-link-container-item > svg {
-    width: 25px;
+.main-iframe-container-controller:active {
+    background-color: var(--b3);
 }
 
 .footer {
@@ -143,3 +181,7 @@ body {
     border-radius: 15px;
     text-align: center;
 }
+
+
+
+
