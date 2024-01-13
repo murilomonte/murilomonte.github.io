@@ -40,18 +40,10 @@ function devMsgCounter() {
 }
 
 let musicList = [
-    '4Wvm4frCN6Td43ojkodXmG',
-    '05iGUAsS3BZPe6WTPpClwd',
-    '4H7WNRErSbONkM06blBoGc',
-    '35SbrfbaSpGUBX7e5BPega',
-    '0rnGYYBw32ALUIiuEgwv2c',
-    '6TRjT37UyRUVrGg3gTlIqb',
-    '6FR410XjipcpHIsmv1bYKA',
-    '6gudDpl4qpCrgx70yXYHii',
-    '0R7l4W5thmI0D8gyVk4IcS',
+    '39uLYYZytVUwcjgeYLI409',
 ]
 
-document.addEventListener('DOMContentLoaded', musicChooser);
+document.addEventListener('DOMContentLoaded', musicChooser());
 
 function musicChooser() {
     document.getElementById('spotify-iframe').src = `https://open.spotify.com/embed/track/${musicList[(Math.random() * musicList.length) | 0]}`
