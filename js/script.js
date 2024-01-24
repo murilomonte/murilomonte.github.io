@@ -40,7 +40,7 @@ function devMsgCounter() {
 }
 
 let musicList = [
-    '39uLYYZytVUwcjgeYLI409',
+    '2A1w51R7uVAi3l75UT1HTw',
 ]
 
 document.addEventListener('DOMContentLoaded', musicChooser());
