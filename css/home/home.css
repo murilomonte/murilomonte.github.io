@@ -48,7 +48,7 @@ body {
     transition: .2s;
 }
 
-/* .header-social {
+ .header-social {
     display: flex;
     margin-top: 15px;
 }
@@ -75,7 +75,7 @@ body {
 
 .header-social-item > svg {
     width: 30px;
-} */
+} 
 
 .main > h2 {
     display: inline-block;
