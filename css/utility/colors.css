@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-:root {
+html {
     /* Background */
     --b1: #242424;
     --b2: #121212;
@@ -20,9 +20,23 @@
     --b3: #2E2E2E;
 }
 
+html.light-mode {
+    --b1: #FFFFFF;
+    --b2: #F5F5F5;
+
+    --t1: #121212;
+    --t2: #D6D6D6;
+    --t3: #242424;
+    --t4: #595959;
+
+    --a1: #2A82FA;
+
+    --b3: #FAFAFA;
+}
+
 /* Light mode */
 @media (prefers-color-scheme: light) {
-    :root {
+    html {
         --b1: #FFFFFF;
         --b2: #F5F5F5;
     

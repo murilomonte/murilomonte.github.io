@@ -48,3 +48,18 @@ document.addEventListener('DOMContentLoaded', musicChooser());
 function musicChooser() {
     document.getElementById('spotify-iframe').src = `https://open.spotify.com/embed/track/${musicList[(Math.random() * musicList.length) | 0]}`
 }
+
+let modo = 'dark'
+function switchTheme() {
+    if (modo == 'dark') {
+        document.getElementById('dark-mode-icon').style.display = 'none'
+        document.getElementById('light-mode-icon').style.display = 'block'
+        document.querySelector('html').className = 'light-mode'
+        modo = 'light'
+    } else {
+        document.getElementById('dark-mode-icon').style.display = 'block'
+        document.getElementById('light-mode-icon').style.display = 'none'
+        document.querySelector('html').className = ''
+        modo = 'dark'
+    }
+}
