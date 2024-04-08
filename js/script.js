@@ -52,14 +52,14 @@ function musicChooser() {
 let modo = 'dark'
 function switchTheme() {
     if (modo == 'dark') {
-        document.getElementById('dark-mode-icon').style.display = 'none'
-        document.getElementById('light-mode-icon').style.display = 'block'
+        document.getElementById('dark-mode-icon').style.display = 'block'
+        document.getElementById('light-mode-icon').style.display = 'none'
         document.querySelector('html').className = 'light-mode'
         modo = 'light'
     } else {
-        document.getElementById('dark-mode-icon').style.display = 'block'
-        document.getElementById('light-mode-icon').style.display = 'none'
-        document.querySelector('html').className = ''
+        document.getElementById('dark-mode-icon').style.display = 'none'
+        document.getElementById('light-mode-icon').style.display = 'block'
+        document.querySelector('html').className = 'dark-mode'
         modo = 'dark'
     }
 }

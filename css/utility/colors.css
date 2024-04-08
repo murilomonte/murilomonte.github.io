@@ -1,9 +1,10 @@
 @charset "UTF-8";
 
-html {
+html.dark-mode {
     /* Background */
     --b1: #242424;
     --b2: #121212;
+    --b3: #2E2E2E;
 
     /* Text */
     --t1: #F0F0F0;
@@ -16,13 +17,12 @@ html {
 
     /* Shadow */
     --shadow: 0px 2px 10px -8px rgba(0, 0, 0, 0.2);
-
-    --b3: #2E2E2E;
 }
 
 html.light-mode {
     --b1: #FFFFFF;
     --b2: #F5F5F5;
+    --b3: #FAFAFA;
 
     --t1: #121212;
     --t2: #D6D6D6;
@@ -31,14 +31,18 @@ html.light-mode {
 
     --a1: #2A82FA;
 
-    --b3: #FAFAFA;
+    /* Shadow */
+    --shadow: 0px 2px 10px -8px rgba(0, 0, 0, 0.2);
+
 }
 
 /* Light mode */
 @media (prefers-color-scheme: light) {
-    html {
+    /* Gambiarra idiota, porém funcional */
+    html.dark-mode {
         --b1: #FFFFFF;
         --b2: #F5F5F5;
+        --b3: #FAFAFA;
     
         --t1: #121212;
         --t2: #D6D6D6;
@@ -47,7 +51,23 @@ html.light-mode {
     
         --a1: #2A82FA;
 
-        --b3: #FAFAFA;
+    }
+
+    html.light-mode {
+        /* Background */
+        --b1: #242424;
+        --b2: #121212;
+        --b3: #2E2E2E;
+    
+        /* Text */
+        --t1: #F0F0F0;
+        --t2: #363636;
+        --t3: #E3E3E3;
+        --t4: #B3B3B3;
+    
+        /* Accent */
+        --a1: #7856FF;
+
     }
 }
 
