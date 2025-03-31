@@ -1,9 +1,0 @@
-@charset "UTF-8";
-
-/* Utility */
-@import "./utility/component.css";
-@import "./utility/colors.css";
-@import "./utility/typography.css";
-
-/* Main */
-@import "./home/home.css"

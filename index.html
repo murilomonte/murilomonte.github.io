@@ -1,127 +1,38 @@
 <!DOCTYPE html>
-<html lang="pt-BR" class="dark-mode">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Murilo | Links</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon">
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
+
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
+
+    For more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+
+    This is a placeholder for base href that will be replaced by the value of
+    the `--base-href` argument provided to `flutter build`.
+  -->
+  <base href="/">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="linkapp">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.ico"/>
+
+  <title>linkapp</title>
+  <link rel="manifest" href="manifest.json">
 </head>
-
-<body class="b2">
-    <header class="header">
-        <div class="header-presentation">
-            <div>
-                <img class="header-presentation-image shadow" src="img/profile.jpg" alt="Gatão">
-            </div>
-            <div>
-                <h1 class="header-presentation-title font-1-gg t1">
-                    Olá!<br>
-                    Eu sou o Murilo<span class="ponto">.</span>
-                </h1>
-            </div>
-        </div>
-        <!-- <div class="header-social">
-            <a href="https://www.instagram.com/muliro_sh/" class="header-social-item b1">
-                <svg viewBox="0 0 38 39" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M11.2701 0.459259C5.30935 0.459259 0.459259 5.44595 0.459259 11.5725V27.4448C0.459259 33.5706 5.31221 38.5551 11.2745 38.5551H26.721C32.6825 38.5551 37.5333 33.5684 37.5333 27.4418V11.5681C37.5333 5.44301 32.6804 0.459259 26.7181 0.459259H11.2701ZM30.1185 6.55459C30.9371 6.55459 31.6015 7.23726 31.6015 8.07842C31.6015 8.91957 30.9371 9.60225 30.1185 9.60225C29.2999 9.60225 28.6356 8.91957 28.6356 8.07842C28.6356 7.23726 29.2999 6.55459 30.1185 6.55459ZM18.9963 9.60225C24.3127 9.60225 28.6356 14.0442 28.6356 19.5072C28.6356 24.9701 24.312 29.4121 18.9963 29.4121C13.6799 29.4121 9.35704 24.9693 9.35704 19.5072C9.35704 14.045 13.6799 9.60225 18.9963 9.60225ZM18.9963 12.6499C15.3104 12.6499 12.323 15.7197 12.323 19.5072C12.323 23.2946 15.3104 26.3644 18.9963 26.3644C22.6822 26.3644 25.6696 23.2946 25.6696 19.5072C25.6696 15.7197 22.6822 12.6499 18.9963 12.6499Z"
-                        fill="var(--a1)" />
-                </svg>
-            </a>
-        </div> -->
-    </header>
-    <main class="main">
-        <h2 class="font-1-g t1">Pessoal<span class="ponto">.</span></h2>
-        <ul class="main-link-container">
-            <li>
-                <a href="https://github.com/murilomonte" class="link-container-item b1 t1 font-2-m shadow">
-                    <div class="link-container-item-icon">
-                        <svg width="45px" height="30px" viewBox="0 0 30 31" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M14.6097 0.666687C6.53092 0.666687 0 7.54166 0 16.0469C0 22.8457 4.18459 28.6006 9.98972 30.6375C10.7155 30.7906 10.9814 30.3066 10.9814 29.8994C10.9814 29.5428 10.9574 28.3206 10.9574 27.0472C6.89337 27.9641 6.04706 25.2138 6.04706 25.2138C5.39394 23.4313 4.42622 22.9732 4.42622 22.9732C3.09605 22.031 4.52311 22.031 4.52311 22.031C5.99862 22.1328 6.77285 23.6097 6.77285 23.6097C8.0788 25.9522 10.1832 25.2903 11.0298 24.8828C11.1506 23.8897 11.5379 23.2022 11.9491 22.8203C8.7077 22.4638 5.29735 21.1397 5.29735 15.2319C5.29735 13.5513 5.8775 12.1763 6.79678 11.107C6.65174 10.7251 6.14365 9.14603 6.94211 7.0326C6.94211 7.0326 8.17569 6.6251 10.9571 8.61134C12.148 8.27468 13.3761 8.10341 14.6097 8.10197C15.8433 8.10197 17.1008 8.28041 18.262 8.61134C21.0437 6.6251 22.2773 7.0326 22.2773 7.0326C23.0758 9.14603 22.5674 10.7251 22.4224 11.107C23.3659 12.1763 23.9221 13.5513 23.9221 15.2319C23.9221 21.1397 20.5117 22.4382 17.2461 22.8203C17.7784 23.3041 18.2378 24.2207 18.2378 25.6722C18.2378 27.7347 18.2139 29.39 18.2139 29.8991C18.2139 30.3066 18.48 30.7906 19.2055 30.6378C25.0106 28.6003 29.1952 22.8457 29.1952 16.0469C29.2191 7.54166 22.6643 0.666687 14.6097 0.666687Z"
-                                fill="var(--a1)" />
-                        </svg>
-                    </div>
-                    <div class="link-container-item-text font-1-m">
-                        <h3 class="t3  font-1-m">Github</h3>
-                        <p class="t4 font-2-pp">Aqui estão os códigos dos meus projetos.</p>
-                    </div>
-                </a>
-            </li>
-
-            <li>
-                <a href="#" class="link-container-item b1 t1 font-2-m shadow">
-                    <div class="link-container-item-icon">
-                        <svg width="45px" height="45px" viewBox="0 -0.5 25 25" fill="none"
-                            xmlns="http:/www.w3.org/2000/svg">
-                            <path
-                                d="M11.1828 7.68276C10.8899 7.97566 10.8899 8.45053 11.1828 8.74342C11.4756 9.03632 11.9505 9.03632 12.2434 8.74342L11.1828 7.68276ZM13.9851 5.94109L14.5154 6.47142V6.47142L13.9851 5.94109ZM18.5291 5.94109L17.9988 6.47142L18.5291 5.94109ZM18.5291 10.4851L17.9988 9.95476L18.5291 10.4851ZM15.7268 12.2268C15.4339 12.5197 15.4339 12.9945 15.7268 13.2874C16.0196 13.5803 16.4945 13.5803 16.7874 13.2874L15.7268 12.2268ZM13.7583 16.3185C14.0513 16.0257 14.0514 15.5508 13.7585 15.2579C13.4657 14.9649 12.9908 14.9648 12.6979 15.2576L13.7583 16.3185ZM10.9561 18.0591L11.4797 18.5961L11.4863 18.5895L10.9561 18.0591ZM6.44132 18.0309L5.91104 18.5612H5.91104L6.44132 18.0309ZM6.41208 13.5161L5.88171 12.9857L5.87499 12.9926L6.41208 13.5161ZM9.21441 11.7744C9.50731 11.4815 9.50731 11.0067 9.21441 10.7138C8.92152 10.4209 8.44665 10.4209 8.15375 10.7138L9.21441 11.7744ZM15.2744 10.2574C15.5673 9.96453 15.5673 9.48966 15.2744 9.19676C14.9815 8.90387 14.5066 8.90387 14.2138 9.19676L15.2744 10.2574ZM9.66975 13.7408C9.37686 14.0337 9.37686 14.5085 9.66975 14.8014C9.96265 15.0943 10.4375 15.0943 10.7304 14.8014L9.66975 13.7408ZM12.2434 8.74342L14.5154 6.47142L13.4548 5.41076L11.1828 7.68276L12.2434 8.74342ZM14.5154 6.47142C15.4773 5.50953 17.0369 5.50953 17.9988 6.47142L19.0594 5.41076C17.5117 3.86308 15.0024 3.86308 13.4548 5.41076L14.5154 6.47142ZM17.9988 6.47142C18.9607 7.43332 18.9607 8.99287 17.9988 9.95476L19.0594 11.0154C20.6071 9.46774 20.6071 6.95845 19.0594 5.41076L17.9988 6.47142ZM17.9988 9.95476L15.7268 12.2268L16.7874 13.2874L19.0594 11.0154L17.9988 9.95476ZM12.6979 15.2576L10.4259 17.5286L11.4863 18.5895L13.7583 16.3185L12.6979 15.2576ZM10.4325 17.5221C9.46732 18.4632 7.92491 18.4536 6.97159 17.5005L5.91104 18.5612C7.44495 20.0948 9.92671 20.1103 11.4797 18.5961L10.4325 17.5221ZM6.97159 17.5005C6.01827 16.5474 6.00828 15.0049 6.94918 14.0396L5.87499 12.9926C4.36107 14.5459 4.37714 17.0277 5.91104 18.5612L6.97159 17.5005ZM6.94241 14.0464L9.21441 11.7744L8.15375 10.7138L5.88175 12.9858L6.94241 14.0464ZM14.2138 9.19676L9.66975 13.7408L10.7304 14.8014L15.2744 10.2574L14.2138 9.19676Z"
-                                fill="var(--a1)" />
-                        </svg>
-                    </div>
-                    <div class="link-container-item-text font-1-m">
-                        <h3 class="t3 font-1-m">Portfólio (WIP)</h3>
-                        <p class="t4 font-2-pp">Meus últimos projetos estão aqui. (WIP)</p>
-                    </div>
-                </a>
-            </li>
-        </ul>
-        <h2 class="font-1-g t1">Outros<span class="ponto">.</span></h2>
-        <ul class="main-link-container">
-            <li>
-                <a href="https://instagram.com/lun.witch" class="link-container-item b1 t1 font-2-m shadow">
-                    <div class="link-container-item-icon">
-                        <svg width="45px" height="30px" viewBox="0 0 38 39" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M11.2701 0.459259C5.30935 0.459259 0.459259 5.44595 0.459259 11.5725V27.4448C0.459259 33.5706 5.31221 38.5551 11.2745 38.5551H26.721C32.6825 38.5551 37.5333 33.5684 37.5333 27.4418V11.5681C37.5333 5.44301 32.6804 0.459259 26.7181 0.459259H11.2701ZM30.1185 6.55459C30.9371 6.55459 31.6015 7.23726 31.6015 8.07842C31.6015 8.91957 30.9371 9.60225 30.1185 9.60225C29.2999 9.60225 28.6356 8.91957 28.6356 8.07842C28.6356 7.23726 29.2999 6.55459 30.1185 6.55459ZM18.9963 9.60225C24.3127 9.60225 28.6356 14.0442 28.6356 19.5072C28.6356 24.9701 24.312 29.4121 18.9963 29.4121C13.6799 29.4121 9.35704 24.9693 9.35704 19.5072C9.35704 14.045 13.6799 9.60225 18.9963 9.60225ZM18.9963 12.6499C15.3104 12.6499 12.323 15.7197 12.323 19.5072C12.323 23.2946 15.3104 26.3644 18.9963 26.3644C22.6822 26.3644 25.6696 23.2946 25.6696 19.5072C25.6696 15.7197 22.6822 12.6499 18.9963 12.6499Z"
-                                fill="var(--a1)" />
-                        </svg>
-                    </div>
-                    <div class="link-container-item-text">
-                        <h3 class="t3  font-1-m">Fotografia</h3>
-                        <p class="t4 font-2-pp">Fotos que tiro no tempo livre :)</p>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <div class="main-iframe-container">
-                    <iframe class="main-iframe-container-iframe shadow" id="spotify-iframe" style="border-radius:15px"
-                        src="https://open.spotify.com/embed/track/6FR410XjipcpHIsmv1bYKA?utm_source=generator" width="100%"
-                        height="80" frameBorder="0" allowfullscreen=""
-                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                        loading="lazy"></iframe>
-                </div>
-            </li>
-        </ul>
-    </main>
-    <footer class="footer">
-        <div class="footer-content-container">
-            <svg id="light-mode-icon" onclick="switchTheme()" width="25px" height="25px" viewBox="0 0 24 24" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                    d="M17 12C17 14.7614 14.7614 17 12 17C9.23858 17 7 14.7614 7 12C7 9.23858 9.23858 7 12 7C14.7614 7 17 9.23858 17 12Z"
-                    fill="var(--t2)" />
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M12 1.25C12.4142 1.25 12.75 1.58579 12.75 2V4C12.75 4.41421 12.4142 4.75 12 4.75C11.5858 4.75 11.25 4.41421 11.25 4V2C11.25 1.58579 11.5858 1.25 12 1.25ZM3.66865 3.71609C3.94815 3.41039 4.42255 3.38915 4.72825 3.66865L6.95026 5.70024C7.25596 5.97974 7.2772 6.45413 6.9977 6.75983C6.7182 7.06553 6.2438 7.08677 5.9381 6.80727L3.71609 4.77569C3.41039 4.49619 3.38915 4.02179 3.66865 3.71609ZM20.3314 3.71609C20.6109 4.02179 20.5896 4.49619 20.2839 4.77569L18.0619 6.80727C17.7562 7.08677 17.2818 7.06553 17.0023 6.75983C16.7228 6.45413 16.744 5.97974 17.0497 5.70024L19.2718 3.66865C19.5775 3.38915 20.0518 3.41039 20.3314 3.71609ZM1.25 12C1.25 11.5858 1.58579 11.25 2 11.25H4C4.41421 11.25 4.75 11.5858 4.75 12C4.75 12.4142 4.41421 12.75 4 12.75H2C1.58579 12.75 1.25 12.4142 1.25 12ZM19.25 12C19.25 11.5858 19.5858 11.25 20 11.25H22C22.4142 11.25 22.75 11.5858 22.75 12C22.75 12.4142 22.4142 12.75 22 12.75H20C19.5858 12.75 19.25 12.4142 19.25 12ZM17.0255 17.0252C17.3184 16.7323 17.7933 16.7323 18.0862 17.0252L20.3082 19.2475C20.6011 19.5404 20.601 20.0153 20.3081 20.3082C20.0152 20.6011 19.5403 20.601 19.2475 20.3081L17.0255 18.0858C16.7326 17.7929 16.7326 17.3181 17.0255 17.0252ZM6.97467 17.0253C7.26756 17.3182 7.26756 17.7931 6.97467 18.086L4.75244 20.3082C4.45955 20.6011 3.98468 20.6011 3.69178 20.3082C3.39889 20.0153 3.39889 19.5404 3.69178 19.2476L5.91401 17.0253C6.2069 16.7324 6.68177 16.7324 6.97467 17.0253ZM12 19.25C12.4142 19.25 12.75 19.5858 12.75 20V22C12.75 22.4142 12.4142 22.75 12 22.75C11.5858 22.75 11.25 22.4142 11.25 22V20C11.25 19.5858 11.5858 19.25 12 19.25Z"
-                    fill="var(--t2)" />
-            </svg>
-            <svg id="dark-mode-icon" onclick="switchTheme()" width="25px" height="25px" viewBox="0 0 24 24" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                    d="M12 22C17.5228 22 22 17.5228 22 12C22 11.5373 21.3065 11.4608 21.0672 11.8568C19.9289 13.7406 17.8615 15 15.5 15C11.9101 15 9 12.0899 9 8.5C9 6.13845 10.2594 4.07105 12.1432 2.93276C12.5392 2.69347 12.4627 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
-                    fill="var(--t2)" />
-            </svg>
-
-            <p class="font-2-p-B t2" id="button" onclick="devMsgCounter()">Made with 🧙‍♀️</p>
-        </div>
-
-        <p id="popup" class="b1 t3 font-2-p-B"></p>
-    </footer>
+<body>
+  <script src="flutter_bootstrap.js" async></script>
 </body>
-<script src="js/script.js"></script>
-
 </html>
